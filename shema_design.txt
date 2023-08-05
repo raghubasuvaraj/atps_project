@@ -1,0 +1,61 @@
+Users
+
+user_id
+user_name
+user_email
+user_password
+created_date
+updated_date
+
+
+UserRole
+
+role_id
+user_id
+role_name
+created_date
+updated_date
+
+
+FileUpload
+
+ file_id
+ user_id
+ file_name
+ file_format
+ file_data_id
+ file_status
+ created_date
+ updated_date
+ 
+FileResults
+
+  result_id
+  file_id
+  progress_percentage
+  file_size
+  file_type_category
+  file_type_description
+  file_type_extension
+  display_name
+  total_scan_engine
+  total_detected_thread
+  scan_all_result
+  created_date
+  updated_date
+
+FileScanResults
+
+  scan_id
+  result_id
+  scan_name
+  scan_time
+  def_time
+  scan_result_i
+  threat_found
+  created_date
+  updated_date
+  
+  
+  
+ 
