@@ -31,10 +31,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 
         http.authorizeRequests().antMatchers("/assets/**","/css/**", "/img/**", "/js/**").permitAll()
-                .antMatchers("/", "/atpstest","/users/login", "/users/signup", "/users/register-business").permitAll()
+                .antMatchers("/", "/atpstestlogin","/atpstestregister","/dashboard","/profile","/atpsPassword","/register","/login","/users/login", "/users/signup", "/users/register-business").permitAll()
                 .antMatchers("/**").authenticated()
                 .and()
-                .formLogin().loginPage("/users/login")
+                .formLogin().loginPage("/")
                 .usernameParameter(UsernamePasswordAuthenticationFilter.SPRING_SECURITY_FORM_USERNAME_KEY)
                 .passwordParameter(UsernamePasswordAuthenticationFilter.SPRING_SECURITY_FORM_PASSWORD_KEY)
                 .defaultSuccessUrl("/")

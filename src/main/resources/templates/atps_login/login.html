@@ -50,20 +50,20 @@
 									<img src="assets\images\brand\logo.png" class="h-8" alt="">
 
 								</div>
-								<form class="card" method="post">
+								<form class="card" method="POST"  th:object="${AtpsLoginModel}" th:action="@{/login}">
 									<div class="card-body p-6 ">
 										<div class="card-title text-center">Login to your Account</div>
 										<div class="input-icon form-group wrap-input">
 											<span class="input-icon-addon search-icon">
 												<i class="mdi mdi-account"></i>
 											</span>
-											<input type="text" class="form-control" placeholder="Username">
+											<input type="text" class="form-control" name="username" placeholder="Username"required>
 										</div>
 										<div class="input-icon form-group wrap-input">
 											<span class="input-icon-addon search-icon">
 												<i class="zmdi zmdi-lock"></i>
 											</span>
-											<input type="password" class="form-control mb-0" id="exampleInputPassword1" placeholder="Password">
+											<input type="password" class="form-control mb-0" id="exampleInputPassword1" name="password" placeholder="Password"required>
 											<label class="form-label">
 												<a href="forgot-password.html" class="float-right small">I forgot password</a>
 											</label>
@@ -78,7 +78,7 @@
 											<button type="submit" class="btn btn-primary btn-block">Sign in</button>
 										</div>
 										<div class="text-center text-muted mt-3">
-											Don't have account yet? <a href="register.html">Sign up</a>
+											Don't have account yet? <a href="/atpstestregister">Sign up</a>
 										</div>
 									</div>
 								</form>
