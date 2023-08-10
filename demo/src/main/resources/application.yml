@@ -1,0 +1,10 @@
+ondcIntegration:
+    checkInterval: PT2.000S
+    timeout: PT30.000S
+    checkThreads: 5
+    asyncThreads: 8
+    asyncTimeout: PT60.000S
+    ondc:
+        baseUrl: https://api.metadefender.com/v4
+        privateProcessing : 1
+        apiKey : bcaac5824ef183ab7f831f74b7519a68
