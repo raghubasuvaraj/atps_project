@@ -16,3 +16,8 @@
         "uploadFile": "WDVPIVAlQEFQWzRcUFpYNTQoUF4pN0NDKTd9JEVJQ0FSLVNUQU5EQVJELUFOVElWSVJVUy1URVNULUZJTEUhJEgrSCo="
     }
 }
+
+
+https://api.metadefender.com/v4/file/bzIzMDgxMDNDWDdmZE1hX2JsWFNrY2ZFZTY
+apiKey 
+bcaac5824ef183ab7f831f74b7519a6
